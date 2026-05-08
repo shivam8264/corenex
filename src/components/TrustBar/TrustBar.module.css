@@ -1,0 +1,115 @@
+.trustBar {
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-5) 0;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.statsRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.statIcon {
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-md);
+  flex-shrink: 0;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.1;
+}
+
+.statDesc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    gap: var(--space-5);
+    padding: 0 var(--space-4);
+  }
+  .label {
+    display: none;
+  }
+  .divider {
+    display: none;
+  }
+  .statsRow {
+    gap: var(--space-5);
+  }
+}
+
+@media (max-width: 480px) {
+  .statsRow {
+    gap: var(--space-4);
+    justify-content: space-between;
+    width: 100%;
+  }
+  .stat {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-1);
+  }
+  .statIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
