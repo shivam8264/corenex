@@ -6,7 +6,7 @@ const stats = [
   { icon: '⭐', value: '4.9/5', desc: 'Google Rating' },
   { icon: '📅', value: '11+ Years', desc: 'In Business' },
   { icon: '🔒', value: '99.9%', desc: 'Uptime SLA' },
-  { icon: '🌍', value: '18+ States', desc: 'PAN India Coverage' },
+  // { icon: '🌍', value: '18+ States', desc: 'PAN India Coverage' },
 ];
 
 export default function TrustBar() {

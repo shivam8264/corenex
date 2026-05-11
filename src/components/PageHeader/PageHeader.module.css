@@ -1,0 +1,10 @@
+.header { background: var(--color-primary); padding: var(--space-16) 0; }
+.inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-6); }
+.breadcrumb { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-5); }
+.crumb { font-size: var(--font-size-sm); color: rgba(232,237,244,0.5); text-decoration: none; transition: color var(--transition-fast); }
+.crumb:hover { color: rgba(232,237,244,0.85); }
+.crumbSep { color: rgba(232,237,244,0.3); font-size: var(--font-size-xs); }
+.crumbActive { font-size: var(--font-size-sm); color: rgba(232,237,244,0.85); }
+.title { font-size: var(--font-size-4xl); font-weight: var(--font-weight-extrabold); color: var(--color-white); line-height: var(--line-height-tight); letter-spacing: -0.02em; margin-bottom: var(--space-4); }
+.subtitle { font-size: var(--font-size-md); color: rgba(232,237,244,0.75); line-height: var(--line-height-relaxed); max-width: 560px; }
+@media (max-width: 768px) { .header { padding: var(--space-10) 0; } .inner { padding: 0 var(--space-4); } .title { font-size: var(--font-size-3xl); } }
